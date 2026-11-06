@@ -20,11 +20,11 @@ describe('Demo product artwork', () => {
     renderAt('/', routes);
     const sec = (await screen.findByRole('heading', { name: /featured demo products/i })).closest('section')!;
     const imgs = await within(sec).findAllByRole('img');
-    expect(imgs.map((i) => i.getAttribute('src'))).toEqual(['/demo-images/DEMO-P-001.svg', '/demo-images/DEMO-P-012.svg']);
-    for (const i of imgs) {
-      expect(i.getAttribute('src')!.startsWith('/')).toBe(true); // never an external host
-      expect(i.getAttribute('alt')).toMatch(/synthetic demo artwork/i);
-    }
+    // DEMO-P-001 (a t-shirt) uses a licensed stock photo; DEMO-P-012 (a phone) keeps its artwork: no suitable photo.
+    expect(imgs.map((i) => i.getAttribute('src'))).toEqual(['/demo-photos/mens-clothing-1.jpg', '/demo-images/DEMO-P-012.svg']);
+    for (const i of imgs) expect(i.getAttribute('src')!.startsWith('/')).toBe(true); // never an external host
+    expect(imgs[0].getAttribute('alt')).toMatch(/stock photo of a similar product/i);
+    expect(imgs[1].getAttribute('alt')).toMatch(/synthetic demo artwork/i);
     expect(within(sec).getByText(/synthetic data and artwork/i)).toBeInTheDocument();
   });
 

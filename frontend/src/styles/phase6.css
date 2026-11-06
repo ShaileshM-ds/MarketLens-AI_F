@@ -731,3 +731,12 @@
   object-fit: contain;
   background: #ffffff;
 }
+
+/* Demo stock photos: fill the square (cropped around their focus point). */
+.product-image--stock img {
+  object-fit: cover;
+}
+.product-image__caption a {
+  color: inherit;
+  text-decoration: underline;
+}

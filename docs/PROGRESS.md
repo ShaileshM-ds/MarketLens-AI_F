@@ -178,6 +178,15 @@ Details: [PHASE4_PRICE_INTELLIGENCE.md](PHASE4_PRICE_INTELLIGENCE.md).
   - All compare requests returned 200.
 - **Not verified by hand:** screen-reader output, keyboard-only use in a real browser (component tests cover keyboard reachability), the reduced-motion setting.
 
+## Demo product photos
+- **What changed:** Demo products now show real, openly licensed stock photos of similar products.
+  - 9 photos from Wikimedia Commons (about 1.17 MB), stored locally and credited: CC0, CC BY 2.0/4.0, CC BY-SA 3.0/4.0.
+  - Every category except phones; each product uses one of its category's photos.
+  - Generated map: `frontend/src/lib/demoPhotos.ts`, from `python -m marketlens_core.demo.photos`. Credits: `docs/IMAGE_CREDITS.md` and `frontend/public/demo-photos/credits.json` (with checksums).
+- **Display:** captioned as similar products with author and licence links; the SVG artwork is the fallback.
+- **Tests:** 2 backend tests and 1 new frontend test; 2 frontend tests updated.
+- **Browser:** Explorer shows the photos with no broken or external requests; the kurta crop keeps heads out of view.
+
 ## Example dataset v2
 - **File:** `data/share/marketlens-demo-dataset-v2.zip` (1.8 MB, 54 files, rebuilds byte-identically). It replaces v1.
 - **What changed:** the import-ready CSVs now have an `image_url` column (`/demo-images/<product_id>.svg`), so products show their artwork while browsing after import.

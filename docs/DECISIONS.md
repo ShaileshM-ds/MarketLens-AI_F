@@ -26,7 +26,11 @@
     - An empty value shows none.
   - **What the browser gets:** the API sends `image.url` only for safe URLs. Every original URL stays stored unchanged in `image.source_url` (provenance).
   - **Loading:** images load without a referrer and fall back to the local generic image if they fail. The caption says "Image from the imported dataset".
-- **Demo products** keep their local synthetic artwork. External images need internet access; offline, the fallback is shown.
+- **Demo products** show openly licensed stock photos of *similar* products where a brand-free photo exists.
+  - Source: Wikimedia Commons, CC0 or CC BY / CC BY-SA, stored locally in `frontend/public/demo-photos/` and credited in [IMAGE_CREDITS.md](IMAGE_CREDITS.md) and on the product page.
+  - Each photo is captioned "Stock photo of a similar product; colour and model may differ" and falls back to the product's SVG artwork if it fails.
+  - No photos of identifiable people or visible brands were used. One kurta photo is cropped on screen to the garment.
+  - Phones keep their SVG artwork. External imported images need internet access; offline, the fallback is shown.
 - **App-served image paths:** `/demo-images/<name>.svg|png|jpg|jpeg|webp` (files MarketLens itself serves) are also shown, under any `IMAGE_HOSTS` setting. Only that folder and those extensions qualify; no other relative paths. The example dataset's `image_url` column uses these, so its images show after import, even offline.
 
 ## Timestamps (snapshot file)

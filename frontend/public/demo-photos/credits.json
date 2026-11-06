@@ -1,0 +1,110 @@
+[
+ {
+  "file": "mens-clothing-1.jpg",
+  "category": "mens-clothing",
+  "title": "Ringflash Tshirt Blank Template (3214240974).jpg",
+  "author": "THOR",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ringflash_Tshirt_Blank_Template_(3214240974).jpg",
+  "sha256": "24f0e1f213d81d91d6434f95d869db5fb7464f1ba35c6c5dba46a051655b2440",
+  "bytes": 92151,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "womens-clothing-1.jpg",
+  "category": "womens-clothing",
+  "title": "Ladies kurta with leggings.jpg",
+  "author": "Govindliya",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ladies_kurta_with_leggings.jpg",
+  "sha256": "c60f42a28f1658c23642a38bd9149f9682713b5314187015267869c6e2d23187",
+  "bytes": 261114,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "wearables-1.jpg",
+  "category": "wearables",
+  "title": "PineTime smartwatch.jpg",
+  "author": "Unnerving duck",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:PineTime_smartwatch.jpg",
+  "sha256": "18f909f87563e36c74aadce88416382e4df98a40cddc1256df2897aa6c692337",
+  "bytes": 166797,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "home-appliances-1.jpg",
+  "category": "home-appliances",
+  "title": "Air Fryer 5458.jpg",
+  "author": "Ashley Pomeroy",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Air_Fryer_5458.jpg",
+  "sha256": "2d14829e9bca1a997f94da6556515c11838b1abf66eae9b6de3c6cd24d187810",
+  "bytes": 77656,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "home-appliances-2.jpg",
+  "category": "home-appliances",
+  "title": "AirFryer Basket.jpg",
+  "author": "AirFryerFanatic",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:AirFryer_Basket.jpg",
+  "sha256": "ad942d70eb29fa628a02836f88287f851185f8a1bc665b2cc7a36a58d47883d0",
+  "bytes": 184121,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "computer-accessories-1.jpg",
+  "category": "computer-accessories",
+  "title": "Wireless Computer Keyboard.jpg",
+  "author": "Pixloom",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Wireless_Computer_Keyboard.jpg",
+  "sha256": "12fb44e1883d225402e1d599b968e71da88bf2bc9f62456b83f0724d8cebea0d",
+  "bytes": 85081,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "computer-accessories-2.jpg",
+  "category": "computer-accessories",
+  "title": "Turkish Q computer keyboard.jpg",
+  "author": "Răzvan Sandu",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Turkish_Q_computer_keyboard.jpg",
+  "sha256": "0a862f9c74450868fc6417aaa5137cc88ba8bcba9490ede4cc223fcd271ee891",
+  "bytes": 97212,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "cameras-1.jpg",
+  "category": "cameras",
+  "title": "Action camera being accessed via MSDC.jpg",
+  "author": "Syced",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:Action_camera_being_accessed_via_MSDC.jpg",
+  "sha256": "270e205984b6b65d6365d852c5e2792faf2c89815f27526e96e55f17cf992d30",
+  "bytes": 100061,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ },
+ {
+  "file": "smart-home-1.jpg",
+  "category": "smart-home",
+  "title": "Smart plug adapter front view with power button.jpg",
+  "author": "Sokolikmawwer0",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Smart_plug_adapter_front_view_with_power_button.jpg",
+  "sha256": "771cf00dc2be69ef34deeacbb7e180b49ec64d4f756c066565ea253c6a830307",
+  "bytes": 105045,
+  "modified": "Scaled to 600 px wide by Wikimedia Commons; otherwise unchanged."
+ }
+]
