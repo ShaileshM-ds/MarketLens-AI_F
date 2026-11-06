@@ -1,0 +1,254 @@
+{
+  "days": 184,
+  "end_date": "2026-10-31",
+  "generator": "MarketLens demo generator",
+  "multi_observation_per_day_products": [
+    "DEMO-P-004",
+    "DEMO-P-012"
+  ],
+  "multi_seller_products": [
+    "DEMO-P-003",
+    "DEMO-P-010"
+  ],
+  "out_of_stock_window": {
+    "end": "2026-08-14",
+    "product_id": "DEMO-P-017",
+    "start": "2026-08-09"
+  },
+  "products_without_reviews": [
+    "DEMO-P-014",
+    "DEMO-P-015",
+    "DEMO-P-016"
+  ],
+  "scenarios": [
+    {
+      "expected": {
+        "note": "Real savings of about 20% against the prior median; the advertised discount also rises.",
+        "price_change_pct": -20,
+        "reference_changed": false
+      },
+      "listing_ids": [
+        "DEMO-L-001-AMA1",
+        "DEMO-L-001-FLI1",
+        "DEMO-L-001-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-001"
+      ],
+      "type": "genuine_discount",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-10-12"
+      }
+    },
+    {
+      "expected": {
+        "note": "Advertised discount jumps while the price doesn't move: real savings about 0%.",
+        "price_change_pct": 0,
+        "reference_change_pct": 50
+      },
+      "listing_ids": [
+        "DEMO-L-002-AMA1",
+        "DEMO-L-002-FLI1",
+        "DEMO-L-002-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-002"
+      ],
+      "type": "inflated_reference",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-10-02"
+      }
+    },
+    {
+      "expected": {
+        "low_stock_days": 0,
+        "note": "Urgency message every day while stock stays normal.",
+        "urgency_days": 60
+      },
+      "listing_ids": [
+        "DEMO-L-005-AMA1",
+        "DEMO-L-005-FLI1",
+        "DEMO-L-005-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-005"
+      ],
+      "type": "repeated_urgency",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-09-02"
+      }
+    },
+    {
+      "expected": {
+        "base_change_pct": -10,
+        "note": "Base price drops about 10% but added shipping keeps the delivered price about the same.",
+        "shipping_added_pct_of_base": 10
+      },
+      "listing_ids": [
+        "DEMO-L-006-AMA1",
+        "DEMO-L-006-FLI1",
+        "DEMO-L-006-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-006"
+      ],
+      "type": "shipping_offset",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-10-02"
+      }
+    },
+    {
+      "expected": {
+        "events": [
+          {
+            "end": "2026-06-16",
+            "outcome_after_7_days": "returned",
+            "price_change_pct": -15,
+            "start": "2026-06-10"
+          },
+          {
+            "end": "2026-07-26",
+            "outcome_after_7_days": "stayed_low",
+            "price_change_pct": -15,
+            "start": "2026-07-20"
+          },
+          {
+            "end": "2026-09-04",
+            "outcome_after_7_days": "returned",
+            "price_change_pct": -15,
+            "start": "2026-08-29"
+          },
+          {
+            "end": "2026-10-14",
+            "outcome_after_7_days": "stayed_low",
+            "price_change_pct": -15,
+            "start": "2026-10-08"
+          }
+        ]
+      },
+      "listing_ids": [
+        "DEMO-L-007-AMA1",
+        "DEMO-L-007-FLI1",
+        "DEMO-L-007-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-007"
+      ],
+      "type": "mixed_event_outcomes",
+      "window": {
+        "end": "2026-10-28",
+        "start": "2026-06-10"
+      }
+    },
+    {
+      "expected": {
+        "note": "No movement apart from listing offsets.",
+        "price_change_pct": 0
+      },
+      "listing_ids": [
+        "DEMO-L-008-AMA1",
+        "DEMO-L-008-FLI1",
+        "DEMO-L-008-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-008"
+      ],
+      "type": "stable_prices",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-05-01"
+      }
+    },
+    {
+      "expected": {
+        "missing_days": 72,
+        "observed_days": 112
+      },
+      "listing_ids": [
+        "DEMO-L-009-AMA1",
+        "DEMO-L-009-FLI1",
+        "DEMO-L-009-MYN1"
+      ],
+      "product_ids": [
+        "DEMO-P-009"
+      ],
+      "type": "sparse_missing_days",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-05-01"
+      }
+    },
+    {
+      "expected": {
+        "cheapest_seller_after": "DEMO-S-AMA-5",
+        "cheapest_seller_before": "DEMO-S-AMA-4"
+      },
+      "listing_ids": [
+        "DEMO-L-010-AMA1",
+        "DEMO-L-010-AMA2"
+      ],
+      "product_ids": [
+        "DEMO-P-010"
+      ],
+      "type": "seller_switch",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-09-17"
+      }
+    },
+    {
+      "expected": {
+        "distinct_days": 10,
+        "note": "Fewer than 14 days: history-based scores must say 'unavailable'."
+      },
+      "listing_ids": [
+        "DEMO-L-011-AMA1",
+        "DEMO-L-011-FLI1"
+      ],
+      "product_ids": [
+        "DEMO-P-011"
+      ],
+      "type": "insufficient_history",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-10-22"
+      }
+    },
+    {
+      "expected": {
+        "note": "Every product in the category moves together.",
+        "price_change_pct": 8
+      },
+      "listing_ids": [
+        "DEMO-L-026-AMA1",
+        "DEMO-L-026-FLI1",
+        "DEMO-L-027-AMA1",
+        "DEMO-L-027-FLI1",
+        "DEMO-L-028-AMA1",
+        "DEMO-L-028-FLI1",
+        "DEMO-L-029-AMA1",
+        "DEMO-L-029-FLI1",
+        "DEMO-L-030-AMA1",
+        "DEMO-L-030-FLI1"
+      ],
+      "product_ids": [
+        "DEMO-P-026",
+        "DEMO-P-027",
+        "DEMO-P-028",
+        "DEMO-P-029",
+        "DEMO-P-030"
+      ],
+      "type": "market_wide_movement",
+      "window": {
+        "end": "2026-10-31",
+        "start": "2026-09-02"
+      }
+    }
+  ],
+  "seed": 20261031,
+  "version": 1
+}

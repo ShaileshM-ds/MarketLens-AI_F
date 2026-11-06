@@ -1,0 +1,111 @@
+/* Design tokens (docs/DESIGN.md). Every colour comes from here so both themes stay in sync. */
+:root,
+:root[data-theme='light'] {
+  --bg-top: #ebe8fd;
+  --bg-bottom: #f7f8fc;
+  --surface: #ffffff;
+  --surface-muted: #f4f3fd;
+  --sidebar: #ffffff;
+  --border: #e7e5f4;
+  --border-strong: #d6d3ef;
+
+  --text: #18203a;
+  --text-muted: #555c78;
+  --heading: #141b34;
+  --accent: #2d5be3;
+
+  --primary: #2f5fe8;
+  --primary-2: #5a4ff0;
+  --primary-grad: linear-gradient(135deg, #2f5fe8 0%, #5a4ff0 100%);
+  --on-primary: #ffffff;
+  --secondary-bg: #f1f3fe;
+  --secondary-text: #2446b8;
+
+  --focus: #2f5fe8;
+  --shadow: 0 10px 30px rgba(70, 60, 160, 0.08), 0 1px 3px rgba(70, 60, 160, 0.05);
+
+  --badge-demo-bg: #fdf3d4;
+  --badge-demo-border: #ecd38a;
+  --badge-demo-text: #6b4e00;
+  --badge-imported-bg: #e3ecff;
+  --badge-imported-border: #b3c7f7;
+  --badge-imported-text: #1e3f99;
+  --badge-live-bg: #dcf5e6;
+  --badge-live-border: #9fdbb7;
+  --badge-live-text: #0f5a32;
+
+  --error-text: #a3192f;
+
+  /* Pastel icon tones */
+  --tone-blue: #e2e9ff;
+  --tone-pink: #fbe3ee;
+  --tone-purple: #ebe6ff;
+  --tone-mint: #dff4ea;
+  --tone-peach: #fdebdc;
+  --tone-grey: #ebebf2;
+  --tone-sky: #def0fb;
+  --tone-green: #ddf3e6;
+  --tone-text: #1d2440;
+
+  /* Hero illustration */
+  --art-bar1: #b9a8f7;
+  --art-bar2: #8e70f0;
+  --art-bar3: #6a46e6;
+  --art-line: #2f5fe8;
+
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+}
+
+:root[data-theme='dark'] {
+  --bg-top: #1b1840;
+  --bg-bottom: #0d1020;
+  --surface: #171b31;
+  --surface-muted: #1f2440;
+  --sidebar: #12152a;
+  --border: #2a2f4d;
+  --border-strong: #3a4066;
+
+  --text: #e6e8f5;
+  --text-muted: #a9aecb;
+  --heading: #f3f4fb;
+  --accent: #8ea8ff;
+
+  --primary: #4b72f5;
+  --primary-2: #6e5ff5;
+  --primary-grad: linear-gradient(135deg, #3d64ee 0%, #6152ec 100%);
+  --on-primary: #ffffff;
+  --secondary-bg: #232a4c;
+  --secondary-text: #b7c6ff;
+
+  --focus: #9db4ff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.3);
+
+  --badge-demo-bg: #3a2f0d;
+  --badge-demo-border: #7a6420;
+  --badge-demo-text: #f6dc8c;
+  --badge-imported-bg: #1c2a55;
+  --badge-imported-border: #3d58a8;
+  --badge-imported-text: #bccdff;
+  --badge-live-bg: #123a26;
+  --badge-live-border: #2f7a51;
+  --badge-live-text: #a6ebc3;
+
+  --error-text: #ff9aa9;
+
+  --tone-blue: #263866;
+  --tone-pink: #4a2638;
+  --tone-purple: #33295e;
+  --tone-mint: #1d4234;
+  --tone-peach: #4a3322;
+  --tone-grey: #2e3248;
+  --tone-sky: #1e3d52;
+  --tone-green: #1d4234;
+  --tone-text: #eef0fb;
+
+  --art-bar1: #6f5bc4;
+  --art-bar2: #8466ee;
+  --art-bar3: #a688ff;
+  --art-line: #7d9bff;
+}

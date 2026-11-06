@@ -1,0 +1,216 @@
+{
+  "excluded": "No accounts, login data, watched products, alert rules, user messages or test-only scenario labels are included.",
+  "files": {
+    "README.md": {
+      "bytes": 3375,
+      "sha256": "899aefa8f9ff981f87c45a76d3fe54579bd3620fec2573952fd95156e4bf8772"
+    },
+    "answer-key/README.md": {
+      "bytes": 551,
+      "sha256": "d7dc41a6da456efec0acc28da71952d190fe3b827191752d48508a73c6075975"
+    },
+    "images/DEMO-P-001.svg": {
+      "bytes": 1372,
+      "sha256": "4793a08ccf9a2cabb4311b0b077010647c364d6f49617e1c5cf7953e0684dc60"
+    },
+    "images/DEMO-P-002.svg": {
+      "bytes": 1374,
+      "sha256": "759ca6f254708647cbbbf5e13fa3ae7932bae6e1cbe103d44bd2c93cd79d5bc0"
+    },
+    "images/DEMO-P-003.svg": {
+      "bytes": 1369,
+      "sha256": "af02c8bfb949690af4875b763d7426e0fa3acda26811d39250eb17cdd6b2b7e3"
+    },
+    "images/DEMO-P-004.svg": {
+      "bytes": 1371,
+      "sha256": "76e7c329c4a1b1027ad517c83fe4b20ca17ab2b15d2eebfff25e089df4b2726e"
+    },
+    "images/DEMO-P-005.svg": {
+      "bytes": 1373,
+      "sha256": "e4041e9ec11d009d107f7474e9390a3cf37a38558890c6000401447c2001080e"
+    },
+    "images/DEMO-P-006.svg": {
+      "bytes": 1650,
+      "sha256": "63957de1f7ae7070b7380907ce80daed2faafebb05b525c20e9d681020574588"
+    },
+    "images/DEMO-P-007.svg": {
+      "bytes": 1651,
+      "sha256": "6e619eced060847a1360feb67a68b51b3363f2cccd96ac381d2ce783bce05532"
+    },
+    "images/DEMO-P-008.svg": {
+      "bytes": 1649,
+      "sha256": "bca084bb62702e579bca9bea23c62b244c98befd0389268623ac846a9bf30b4c"
+    },
+    "images/DEMO-P-009.svg": {
+      "bytes": 1650,
+      "sha256": "1297ae7318415ec4e19e0233707d05985b16be281ac802c7959ab8b314bdc60d"
+    },
+    "images/DEMO-P-010.svg": {
+      "bytes": 1651,
+      "sha256": "0b62d29915cdddd7da64ffe9fdd30eaed64af520263d1bbb6ddb1fc4bf9ec097"
+    },
+    "images/DEMO-P-011.svg": {
+      "bytes": 1496,
+      "sha256": "e72df7ce5d4a58bb4538b47ccf6bd0286d34866745281fefc0a7a5db381e158a"
+    },
+    "images/DEMO-P-012.svg": {
+      "bytes": 1496,
+      "sha256": "30a6615e38dfa15aa631acd3e345dd68afa92e3510e1a4442895ba2e87917f3a"
+    },
+    "images/DEMO-P-013.svg": {
+      "bytes": 1493,
+      "sha256": "b961d7af8f7ac39a87593d5621139529ac63183e596ed3933a69ce718b9d73fc"
+    },
+    "images/DEMO-P-014.svg": {
+      "bytes": 1493,
+      "sha256": "9b8c61ac38df2a93d43196621cb5fdc9dbf5825e2e021e96f1f84bbad57ce608"
+    },
+    "images/DEMO-P-015.svg": {
+      "bytes": 1492,
+      "sha256": "474aa09da8afdfb172df30af3fe93be8e0ee7e9f0224f30247e1b68665fa50c5"
+    },
+    "images/DEMO-P-016.svg": {
+      "bytes": 1648,
+      "sha256": "2a23a589096fb6e32fefcf07d8b618f733adeae6e80e9a80af9717e99e11f059"
+    },
+    "images/DEMO-P-017.svg": {
+      "bytes": 1647,
+      "sha256": "2ddff4ab2562ea0bf9d21a5f3e4059959e65219e16118d5e76903840b50cec86"
+    },
+    "images/DEMO-P-018.svg": {
+      "bytes": 1641,
+      "sha256": "397104cbdbc7353a8a967491c29b68b8a72fd0b528a62b897aec9f5cad63854c"
+    },
+    "images/DEMO-P-019.svg": {
+      "bytes": 1641,
+      "sha256": "33b51f4361a0565df39d82747581cd9f4d8f617bbd1be65082858d0744cb837a"
+    },
+    "images/DEMO-P-020.svg": {
+      "bytes": 1645,
+      "sha256": "c770d1efafacee7b884d19a9667543aa9fcc3e585cdcff42e35d4655692287f1"
+    },
+    "images/DEMO-P-021.svg": {
+      "bytes": 1597,
+      "sha256": "d4407aaa30b7394b99bae7c405c60dd1f7e9fc0f982b1168b5583e10a6043681"
+    },
+    "images/DEMO-P-022.svg": {
+      "bytes": 1597,
+      "sha256": "cce52a88643585b8442d6d2f3a32a3583074fde2bd9b6ee7d3f288502548eb45"
+    },
+    "images/DEMO-P-023.svg": {
+      "bytes": 1596,
+      "sha256": "1f460341c3d7aa6ae0170cde16deaa2c398ea80f9ed2b7f44a020dcadc1a1c1a"
+    },
+    "images/DEMO-P-024.svg": {
+      "bytes": 1595,
+      "sha256": "672fe636ae097b1dc6c34bd6e25498cb069b2bace712e6d4ab475c4ed804d6cc"
+    },
+    "images/DEMO-P-025.svg": {
+      "bytes": 1598,
+      "sha256": "6bf074c4de27d60398bacb33633030d0413d90801a4daa7428d20761e9fcd63c"
+    },
+    "images/DEMO-P-026.svg": {
+      "bytes": 3042,
+      "sha256": "33a3e8203fdaec84f77cbe59c870af19198b6c311865a57e5a04555d21651ba0"
+    },
+    "images/DEMO-P-027.svg": {
+      "bytes": 3040,
+      "sha256": "2c41f0d097fef7b438a519f33545a8e5ef4848bfeb248373c37626fbe965c109"
+    },
+    "images/DEMO-P-028.svg": {
+      "bytes": 3040,
+      "sha256": "ee62cb58fba309c0560dc6a921801df89809481ba02023c3f4c918eaf7da4735"
+    },
+    "images/DEMO-P-029.svg": {
+      "bytes": 3040,
+      "sha256": "015ce31fc26b99fbe27cc0e5234ed376ae87aef505a3776a59776e86f27dd2a8"
+    },
+    "images/DEMO-P-030.svg": {
+      "bytes": 3038,
+      "sha256": "946de53531e632ea08b68c490ca5ddd337ef66442a1846ad099c064bd10db591"
+    },
+    "images/DEMO-P-031.svg": {
+      "bytes": 1478,
+      "sha256": "518a45c2f61bc0a38134783b4eac226f56d51bba03510324fcc5943a10f56606"
+    },
+    "images/DEMO-P-032.svg": {
+      "bytes": 1480,
+      "sha256": "1d8357ddbf59cf526c421415b089d3ceb78d6ab24e5db364ecce79b69bb69bd6"
+    },
+    "images/DEMO-P-033.svg": {
+      "bytes": 1476,
+      "sha256": "276b597d8df22d5fd21d71fd1b84a56a506c3da54e7f5c3a61d67c759f60de0e"
+    },
+    "images/DEMO-P-034.svg": {
+      "bytes": 1477,
+      "sha256": "b1c9a925ce1bbc8866b4de97cbceb90704fc4525ef264be2b77e5c40addfcfb2"
+    },
+    "images/DEMO-P-035.svg": {
+      "bytes": 1480,
+      "sha256": "5937a87f682660c6d27deeb34a5abad8d61101bebb2bfe3f5922f59afbed2693"
+    },
+    "images/DEMO-P-036.svg": {
+      "bytes": 1422,
+      "sha256": "baf0986ae3a3d6987800a3a313fab83d5755d718297e9a18e9a71c535f626977"
+    },
+    "images/DEMO-P-037.svg": {
+      "bytes": 1423,
+      "sha256": "88736db2a4a1932b8d90f5fcf959eb8608e8de5ee3bf53b97cc89fdad1c7e85c"
+    },
+    "images/DEMO-P-038.svg": {
+      "bytes": 1420,
+      "sha256": "0993b1c33348125d9145cae08e910ce694a9d404cc578c0e290ee6fe35ef65e2"
+    },
+    "images/DEMO-P-039.svg": {
+      "bytes": 1418,
+      "sha256": "1ae0926d365a2fe4e4a1ada9c0217bcc15e96323b25f433929956f2d20dda85f"
+    },
+    "images/DEMO-P-040.svg": {
+      "bytes": 1421,
+      "sha256": "b956aab89c9f9ef8c7b3ed6dbf3aace32f56379615538eee7e38272e9f864c48"
+    },
+    "images/fallback.svg": {
+      "bytes": 540,
+      "sha256": "7b8564d5a31bffdf8f71bdb3a089f9f4be2b6687b38b74ad05d0c84e31c2536d"
+    },
+    "observations.csv": {
+      "bytes": 10532980,
+      "rows": 17100,
+      "sha256": "b47ca5c44057d1ab68b967dd17ddc46ef9bfdfeba9a2aff451b1e7f748dc06ca"
+    },
+    "offers.csv": {
+      "bytes": 31201,
+      "rows": 92,
+      "sha256": "64e82c609cc00abc4f7ca346f009073945f5723f4360ba00af5092fdba7d9d8b"
+    },
+    "products.csv": {
+      "bytes": 14468,
+      "rows": 40,
+      "sha256": "d0de8523e30989251cce51f28d850a21428193a238da46d84b467a115668e47c"
+    },
+    "reviews.csv": {
+      "bytes": 156944,
+      "rows": 326,
+      "sha256": "429f846b102350a635d11b2410736ab27efccd6d7f927afff6d379cfd30747aa"
+    },
+    "schema.md": {
+      "bytes": 4706,
+      "sha256": "dfb85f039883c37ee413df9baeeee18296be16e46453f3c21532ddaee4539a67"
+    }
+  },
+  "generated_at": "2026-11-06T00:08:06.249000Z",
+  "generation_run_id": "6b62fe81957845a0a1f256619e4a80a4",
+  "generator": {
+    "end_date": "2026-10-31",
+    "name": "MarketLens demo generator",
+    "seed": 20261031,
+    "version": 1
+  },
+  "image_assets": 41,
+  "mode": "demo",
+  "money": "integer minor units (paise for INR)",
+  "pack": "MarketLens AI Demo reference pack",
+  "pack_version": "1",
+  "schema_version": "1",
+  "synthetic": true
+}

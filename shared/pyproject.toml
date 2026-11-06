@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marketlens-core"
+version = "0.1.0"
+description = "Business logic shared by the MarketLens API and worker."
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic-settings>=2.7,<3",
+  "pymongo>=4.10,<5",
+]
+
+[tool.setuptools.packages.find]
+include = ["marketlens_core*"]
