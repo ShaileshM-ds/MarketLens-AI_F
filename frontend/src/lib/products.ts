@@ -26,7 +26,7 @@ export interface ProductItem {
   brand: string | null;
   size: string | null;
   colour: string | null;
-  image: { kind: string };
+  image: { kind: string; url?: string | null };
   synthetic: boolean | null;
   source_label: string | null;
   offer_count: number;
@@ -157,7 +157,7 @@ export interface CompareProduct {
   category: string;
   category_label: string;
   source_category: string | null;
-  image: { kind: string };
+  image: { kind: string; url?: string | null };
   synthetic: boolean | null;
   source_label: string | null;
   marketplaces: string[];
@@ -195,7 +195,7 @@ export interface ProductDetail {
     brand: string | null;
     size: string | null;
     colour: string | null;
-    image: { kind: string };
+    image: { kind: string; url?: string | null };
     synthetic: boolean | null;
     source_label: string | null;
     source_type: string | null;

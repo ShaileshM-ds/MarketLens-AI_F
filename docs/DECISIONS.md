@@ -19,7 +19,15 @@
 - Category mapping is always explicit in the import configuration. A row whose category is not mapped is quarantined; it is never guessed.
 
 ## Images
-- Image URLs on placeholder hosts (for example `placehold.co`) are shown with a local generic image. The original URL is kept on the record for provenance but is not loaded.
+- **Imported images are shown while browsing** (Explorer cards and table, product page, comparison) when the dataset's image URL is safe. It replaces the earlier rule that only the generic image was shown.
+  - **Safe means:** https only, a real host, no embedded credentials, at most 2,048 characters, and the host allowed by `IMAGE_HOSTS`.
+    - `*` (the default) allows any https host.
+    - A comma list allows only those hosts and their subdomains.
+    - An empty value shows none.
+  - **What the browser gets:** the API sends `image.url` only for safe URLs. Every original URL stays stored unchanged in `image.source_url` (provenance).
+  - **Loading:** images load without a referrer and fall back to the local generic image if they fail. The caption says "Image from the imported dataset".
+- **Demo products** keep their local synthetic artwork. External images need internet access; offline, the fallback is shown.
+- **App-served image paths:** `/demo-images/<name>.svg|png|jpg|jpeg|webp` (files MarketLens itself serves) are also shown, under any `IMAGE_HOSTS` setting. Only that folder and those extensions qualify; no other relative paths. The example dataset's `image_url` column uses these, so its images show after import, even offline.
 
 ## Timestamps (snapshot file)
 - The snapshot's timestamps have no timezone. The importer preserves the original timestamp string exactly, sets `timestamp_quality = "timezone_unknown"`, and leaves the normalized UTC observation time (`observed_at`) unknown. It never silently assumes a timezone.

@@ -180,7 +180,7 @@ function Overview({ d }: { d: ProductDetail }) {
   ].filter(([, v]) => v) as [string, string][];
   return (
     <section id="overview" className="card product-hero" aria-labelledby="overview-title">
-      <ProductImage kind={p.image.kind} productId={p.product_id} name={p.name} caption />
+      <ProductImage kind={p.image.kind} productId={p.product_id} name={p.name} url={p.image.url} caption />
       <div className="stack-md">
         <div>
           <p className="product-card__meta">

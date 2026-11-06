@@ -178,6 +178,19 @@ Details: [PHASE4_PRICE_INTELLIGENCE.md](PHASE4_PRICE_INTELLIGENCE.md).
   - All compare requests returned 200.
 - **Not verified by hand:** screen-reader output, keyboard-only use in a real browser (component tests cover keyboard reachability), the reduced-motion setting.
 
+## Example dataset v2
+- **File:** `data/share/marketlens-demo-dataset-v2.zip` (1.8 MB, 54 files, rebuilds byte-identically). It replaces v1.
+- **What changed:** the import-ready CSVs now have an `image_url` column (`/demo-images/<product_id>.svg`), so products show their artwork while browsing after import.
+- **Verified:** checksums and manifest; no answer key or user data; the 279-row sample imported 279/279 into a throwaway database, all with displayable images.
+
+## Imported product images
+- **What changed:** a dataset's `image_url` column now shows the product's image while browsing (Explorer grid and table, product page, comparison).
+  - The API sends a URL only when it's safe (`shared/marketlens_core/images.py`: https, real host, no credentials, ≤ 2,048 characters, host allowed by `IMAGE_HOSTS`, default `*`).
+  - The UI loads it without a referrer, with the local generic image as fallback.
+- **Existing Imported data:** its `placehold.co` URLs now display as images.
+- **Tests:** 3 backend tests and 3 frontend tests.
+- **Browser check:** an Imported Explorer card and product page load the dataset image.
+
 ## Presentation readiness and demo reference pack (final milestone, done)
 - **Forecast selection** (corrected): per forecast series only.
   - The candidate is used when it beats the last-price baseline by 5%+ in that listing's own backtest; other series never influence it.

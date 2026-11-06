@@ -701,3 +701,33 @@
   padding: 10px 12px 12px;
   font-weight: 600;
 }
+
+/* Imported product photos (safe URLs from the dataset). */
+.product-image--photo {
+  padding: 0;
+  background: var(--surface-muted);
+  overflow: hidden;
+}
+.product-image--photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+}
+.product-card .product-image--photo img {
+  border-radius: 0;
+}
+.product-hero .product-image--photo img {
+  max-width: 320px;
+}
+.compare-col .product-image--photo img {
+  width: 96px;
+  height: 96px;
+}
+.table-thumb {
+  object-fit: contain;
+  background: #ffffff;
+}

@@ -145,6 +145,13 @@ docker compose exec api python -m app.cli rebuild-summaries --mode imported
 
 See [docs/PHASE3_PRODUCT_EXPLORER.md](docs/PHASE3_PRODUCT_EXPLORER.md) for routes, parameters, sorting, filter and price rules.
 
+## Product images
+
+- **Imported datasets:** the optional **Image URL** column is shown while browsing when it's an https URL on an allowed host.
+  - Set `IMAGE_HOSTS` in `.env`: `*` for any host (default), a comma list to restrict, or empty for none.
+  - Images that fail to load fall back to the local generic image.
+- **Demo products:** use local synthetic artwork.
+
 ## Demo data and price history
 
 - **Generate Demo data:** sign in as an administrator, then Data administration → **Generate demo data**.

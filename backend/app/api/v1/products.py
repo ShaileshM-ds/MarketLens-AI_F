@@ -12,6 +12,7 @@ from marketlens_core.audit import product_audit
 from marketlens_core.sync import product_sync
 from marketlens_core.evidence import price_evidence
 from marketlens_core.forecast import product_forecast
+from marketlens_core.images import attach_image_urls
 from marketlens_core.explorer import CATEGORY_LABELS, filter_metadata, list_products, product_detail, product_reviews
 from marketlens_core.history import HistoryError, as_of, parse_utc, product_history
 from marketlens_core.settings import DataMode
@@ -93,6 +94,7 @@ def products(
     }
     try:
         result = list_products(db, filters=filters, sort=sort, page=page, page_size=page_size)
+        attach_image_urls(db, result["items"], request.app.state.settings.image_hosts)
     except PyMongoError:
         _unavailable()
     return {"mode": mode.value, **result}
@@ -112,6 +114,8 @@ def product(request: Request, product_id: str = ProductId, mode: DataMode = Quer
     db = _db(request, mode)
     try:
         d = product_detail(db, product_id)
+        if d is not None:
+            attach_image_urls(db, [d["product"]], request.app.state.settings.image_hosts)
     except PyMongoError:
         _unavailable()
     if d is None:

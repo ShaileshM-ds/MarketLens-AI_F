@@ -7,6 +7,7 @@ x-app-env: &app-env
   MONGO_DB_LIVE: ${MONGO_DB_LIVE:-marketlens_live}
   MONGO_DB_ACCOUNTS: ${MONGO_DB_ACCOUNTS:-marketlens_accounts}
   LIVE_PROVIDER_ENABLED: ${LIVE_PROVIDER_ENABLED:-false}
+  IMAGE_HOSTS: ${IMAGE_HOSTS:-*}
   LOG_LEVEL: ${LOG_LEVEL:-INFO}
 
 services:

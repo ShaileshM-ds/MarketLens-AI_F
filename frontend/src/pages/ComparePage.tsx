@@ -180,7 +180,7 @@ export function ComparePage() {
                     <td />
                     {products.map((p) => (
                       <th key={p.product_id} scope="col" className={`compare-col${replacing === p.product_id ? ' compare-col--replacing' : ''}`}>
-                        <ProductImage kind={p.image.kind} productId={p.product_id} name={p.name} />
+                        <ProductImage kind={p.image.kind} productId={p.product_id} name={p.name} url={p.image.url} />
                         <Link to={`/products/${encodeURIComponent(p.product_id)}`} className="link compare-col__name">
                           {p.name}
                         </Link>

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { PageHeader } from './PageHeader';
-import { ProductImage, demoImageSrc } from '../components/ProductImage';
+import { ProductImage, thumbnailSrc } from '../components/ProductImage';
 import { CompareTray } from '../components/CompareTray';
 import { WatchToggle } from '../components/WatchToggle';
 import { useCompare } from '../lib/compareSelection';
@@ -592,7 +592,7 @@ function ProductCard({ p }: { p: ProductItem }) {
   const rating = ratingText(p);
   return (
     <article className="card product-card">
-      <ProductImage kind={p.image.kind} productId={p.product_id} name={p.name} />
+      <ProductImage kind={p.image.kind} productId={p.product_id} name={p.name} url={p.image.url} />
       <div className="product-card__body">
         <p className="product-card__meta">
           {p.category_label}
@@ -642,7 +642,7 @@ function ProductTable({ items }: { items: ProductItem[] }) {
             <tr key={p.product_id}>
               <th scope="row">
                 <Link to={`/products/${encodeURIComponent(p.product_id)}`} className="link table-product" aria-label={`View details for ${p.name}`}>
-                  {demoImageSrc(mode, p.product_id) && <img className="table-thumb" src={demoImageSrc(mode, p.product_id)!} alt="" width={40} height={40} loading="lazy" />}
+                  {thumbnailSrc(mode, p.product_id, p.image.url) && <img className="table-thumb" src={thumbnailSrc(mode, p.product_id, p.image.url)!} alt="" width={40} height={40} loading="lazy" referrerPolicy="no-referrer" onError={(e) => { e.currentTarget.style.display = 'none'; }} />}
                   <span>{p.name}</span>
                 </Link>
               </th>

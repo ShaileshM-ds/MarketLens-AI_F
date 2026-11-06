@@ -29,6 +29,8 @@ class Settings(BaseSettings):
 
     # Live stays off until a provider, credentials and limits are configured.
     live_provider_enabled: bool = False
+    # Imported product images: "*" shows any https host, "a.com,b.com" only those hosts (and subdomains), "" none.
+    image_hosts: str = "*"
 
     cors_origins: str = "http://localhost:5173,http://localhost:8080"
     # Set true whenever the app is served over HTTPS.
