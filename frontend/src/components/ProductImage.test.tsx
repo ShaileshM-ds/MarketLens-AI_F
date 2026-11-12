@@ -30,17 +30,16 @@ describe('ProductImage', () => {
     const a = show('imported', <ProductImage productId="IMG-3" name="No image" url={null} />);
     expect(a.container.querySelector('img')!.getAttribute('src')).toBe('/images/product-placeholder.svg');
     a.unmount();
-    const b = show('demo', <ProductImage productId="DEMO-P-012" name="Phone" url={URL_OK} />);
-    expect(b.container.querySelector('img')!.getAttribute('src')).toBe('/demo-images/DEMO-P-012.svg'); // no photo for phones
+    const b = show('demo', <ProductImage productId="DEMO-P-099" name="Unmapped" url={URL_OK} />);
+    expect(b.container.querySelector('img')!.getAttribute('src')).toBe('/demo-images/DEMO-P-099.svg'); // no photo mapped: local artwork
   });
 
-  it('shows a credited stock photo for Demo products, labelled as a similar product, with the artwork as fallback', () => {
+  it('shows the local photo for Demo products without a caption (credits are on /credits), with the artwork as fallback', () => {
     const { container } = show('demo', <ProductImage productId="DEMO-P-001" name="Tee" caption />);
     const img = container.querySelector('img')!;
     expect(img.getAttribute('src')).toBe('/demo-photos/mens-clothing-1.jpg');
-    expect(screen.getByText(/stock photo of a similar product/i)).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /cc by 2\.0/i }).getAttribute('href')).toMatch(/^https:\/\/creativecommons\.org\//);
-    expect(screen.getByRole('link', { name: /wikimedia commons/i }).getAttribute('href')).toMatch(/^https:\/\/commons\.wikimedia\.org\//);
+    expect(img.getAttribute('alt')).toBe('Tee');
+    expect(container.querySelector('figcaption')).toBeNull();
     fireEvent.error(img);
     expect(container.querySelector('img')!.getAttribute('src')).toBe('/demo-images/DEMO-P-001.svg');
   });

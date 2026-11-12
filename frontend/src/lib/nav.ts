@@ -11,6 +11,7 @@ export const NAV_ITEMS: NavItem[] = [
   { to: '/analyst', label: 'Analyst dashboard' },
   { to: '/admin', label: 'Data administration' },
   { to: '/methodology', label: 'Methodology' },
+  { to: '/credits', label: 'Image credits' },
 ];
 
 /** Pages reached from within a section rather than from the sidebar. */

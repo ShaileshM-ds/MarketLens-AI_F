@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { ProductExplorer } from './pages/ProductExplorer';
 import { AnalystDashboard } from './pages/AnalystDashboard';
 import { MethodologyPage } from './pages/MethodologyPage';
+import { ImageCreditsPage } from './pages/ImageCreditsPage';
 import { ProductPage } from './pages/ProductPage';
 import { ComparePage } from './pages/ComparePage';
 import { WatchlistPage } from './pages/WatchlistPage';
@@ -27,6 +28,7 @@ export function App() {
         <Route path="admin/import" element={<ImportWizard />} />
         <Route path="admin/import/:runId" element={<ImportWizard />} />
         <Route path="methodology" element={<MethodologyPage />} />
+        <Route path="credits" element={<ImageCreditsPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

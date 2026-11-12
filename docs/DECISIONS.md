@@ -31,7 +31,7 @@
   - Each photo is captioned "Stock photo of a similar product; colour and model may differ" and falls back to the product's SVG artwork if it fails.
   - No photos of identifiable people or visible brands were used. One kurta photo is cropped on screen to the garment.
   - Phones keep their SVG artwork. External imported images need internet access; offline, the fallback is shown.
-- **App-served image paths:** `/demo-images/<name>.svg|png|jpg|jpeg|webp` (files MarketLens itself serves) are also shown, under any `IMAGE_HOSTS` setting. Only that folder and those extensions qualify; no other relative paths. The example dataset's `image_url` column uses these, so its images show after import, even offline.
+- **App-served image paths:** `/demo-images/` and `/demo-photos/<name>.svg|png|jpg|jpeg|webp` (files MarketLens itself serves) are also shown, under any `IMAGE_HOSTS` setting. Only that folder and those extensions qualify; no other relative paths. The example dataset's `image_url` column uses these, so its images show after import, even offline.
 
 ## Timestamps (snapshot file)
 - The snapshot's timestamps have no timezone. The importer preserves the original timestamp string exactly, sets `timestamp_quality = "timezone_unknown"`, and leaves the normalized UTC observation time (`observed_at`) unknown. It never silently assumes a timezone.
@@ -176,6 +176,12 @@
 - **Calibration wording:** "Not calibrated" is shown for any horizon whose measured coverage is below the nominal level, not only beyond 5 points.
 - **Demo artwork:** generated, self-contained SVG (no external references or images), mapped by Demo product ID and shown only in Demo mode, with a local fallback. The Demo database is unchanged.
 - **Reference pack:** an export of the Demo database only (it refuses other databases); read-only and deterministic. It excludes the answer key, user data and the observations' `raw` rows (all their values are in the columns).
+
+## Labels and photos (final)
+- **One data-mode label:** the single persistent top-bar badge (CLAUDE.md) is the only on-screen "Demo · synthetic data" label. Per-card, per-section, per-review and per-image "Synthetic" tags and captions were removed at the user's request.
+  - Records keep their synthetic flag and provenance, and the product page's Data provenance panel and the Methodology page still state it.
+- **Photos:** every Demo product shows its own openly licensed photo (38 photos; t-shirts and cameras have 4, so one product in each shares).
+  - The photos carry no captions. Authors and licences are on the `/credits` page and in `docs/IMAGE_CREDITS.md`, as CC BY and CC BY-SA require.
 
 ## Imports go to Imported mode only
 - The importer always writes to the Imported database. Demo data comes only from the demo generator, and Live data only from a configured provider.

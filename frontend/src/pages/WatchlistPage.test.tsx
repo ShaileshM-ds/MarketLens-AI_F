@@ -69,7 +69,7 @@ describe('Watchlist & alerts page', () => {
     expect(within(card).getByText('₹1,430')).toBeInTheDocument();
     expect(within(card).getByText('MCL0001')).toBeInTheDocument();
     expect(within(card).getByText(/1 active alert/i)).toBeInTheDocument();
-    expect(within(card).getByText('Synthetic dataset')).toBeInTheDocument();
+    expect(within(card).queryByText('Synthetic dataset')).toBeNull();
     expect(within(card).getByRole('link', { name: /view details/i })).toHaveAttribute('href', '/products/MCL0001');
     await userEvent.click(within(card).getByRole('button', { name: /remove .* from watchlist/i }));
     await userEvent.click(within(card).getByRole('button', { name: /confirm remove/i }));
@@ -141,7 +141,7 @@ describe('Watchlist & alerts page', () => {
     expect(within(item).getByText(/Flipkart · base price ₹1,300 is at or below your target ₹1,350/)).toBeInTheDocument();
     expect(within(item).getByText(/5 Nov 2026, 09:00 UTC/)).toBeInTheDocument();
     expect(within(item).getByText(/email not sent \(local outbox only\)/i)).toBeInTheDocument();
-    expect(within(item).getByText('Synthetic')).toBeInTheDocument();
+    expect(within(item).queryByText('Synthetic')).toBeNull();
     expect(within(item).queryByText(/dropped/i)).not.toBeInTheDocument();
     await userEvent.click(within(item).getByRole('button', { name: /mark as read/i }));
     await waitFor(() => expect(m.sent('POST', `/api/v1/notifications/${'b'.repeat(24)}/read`)).toHaveLength(1));

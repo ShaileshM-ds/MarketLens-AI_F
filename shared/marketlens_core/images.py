@@ -4,7 +4,7 @@ The importer keeps every supplied URL unchanged on the product (`image.source_ur
 sends a URL to the browser only when it is safe to load:
 - https only (never http, data:, javascript: or other schemes), with a real host and no embedded credentials,
   at most 2,048 characters;
-- or a path to an image file the app itself serves (`/demo-images/<name>.svg|png|jpg|jpeg|webp`);
+- or a path to an image file the app itself serves (`/demo-images/` or `/demo-photos/<name>.svg|png|jpg|jpeg|webp`);
 - the host matches the administrator's allowlist (`IMAGE_HOSTS`): "*" allows any https host, a
   comma-separated list allows those hosts and their subdomains, and an empty value shows no external images.
 The page sends no referrer to image hosts (Referrer-Policy: same-origin) and falls back to the local
@@ -19,8 +19,8 @@ from pymongo.database import Database
 from .db import PRODUCTS
 
 MAX_URL = 2048
-# Image files the app itself serves (frontend/public/demo-images): same origin, offline, allowed under any policy.
-APP_IMAGE_PATH = re.compile(r"^/demo-images/[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*\.(svg|png|jpg|jpeg|webp)$")
+# Image files the app itself serves (frontend/public/demo-images and demo-photos): same origin, offline, allowed under any policy.
+APP_IMAGE_PATH = re.compile(r"^/(demo-images|demo-photos)/[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*\.(svg|png|jpg|jpeg|webp)$")
 
 
 def displayable_url(url: str | None, policy: str) -> str | None:

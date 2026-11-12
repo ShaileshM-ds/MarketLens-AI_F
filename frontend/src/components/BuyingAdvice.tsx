@@ -50,7 +50,6 @@ function AdviceBody({ a, onEvidence, onTimeline }: { a: Advice; onEvidence: () =
       <div className="advice__head">
         <h3 className="advice__label">{r.label}</h3>
         {a.confidence.level && <span className={`tag ${a.confidence.level === 'high' ? 'tag--good' : a.confidence.level === 'medium' ? 'tag--warn' : 'tag--bad'}`}>{a.confidence.level[0].toUpperCase() + a.confidence.level.slice(1)} confidence</span>}
-        {a.source.synthetic && <span className="tag tag--synthetic">Synthetic data</span>}
       </div>
       <p className="advice__reason">{r.reason}</p>
 

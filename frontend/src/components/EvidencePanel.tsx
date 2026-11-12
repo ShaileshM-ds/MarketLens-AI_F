@@ -151,7 +151,7 @@ function EvidenceResult({ e, onOpen }: { e: PriceEvidence; onOpen: (date: string
               <div><dt>Daily range</dt><dd>{money(ev.lowest_minor)} – {money(ev.highest_minor)}</dd></div>
               <div><dt>Current observation</dt><dd>{money(ev.current_observation.value_minor)} · {ev.current_observation.availability ?? 'Availability unknown'}{e.basis === 'delivered' ? ` · shipping ${money(ev.current_observation.shipping_minor)}` : ''}</dd></div>
               <div><dt>Comparison basis</dt><dd>{e.basis === 'delivered' ? 'Confirmed delivered price (base + known shipping)' : 'Base price (excludes shipping)'}; same store listing, seller and currency</dd></div>
-              <div><dt>Source</dt><dd>{e.source.synthetic && <span className="tag tag--synthetic">Synthetic data</span>} {e.source.source_labels.join(', ')}{e.source.source_files.length ? ` · ${e.source.source_files.join(', ')}` : ''}</dd></div>
+              <div><dt>Source</dt><dd>{e.source.source_labels.join(', ')}{e.source.source_files.length ? ` · ${e.source.source_files.join(', ')}` : ''}</dd></div>
             </dl>
             <details className="evidence__daily">
               <summary>Daily observed prices ({ev.daily.length} days)</summary>

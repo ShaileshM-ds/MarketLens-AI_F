@@ -32,7 +32,7 @@ describe('Compare products', () => {
     expect(within(table).getAllByText('₹1,370').length).toBeGreaterThan(0);
     expect(within(table).getAllByText('₹1,430').length).toBeGreaterThan(0);
     expect(screen.getByRole('region', { name: /product comparison table/i })).toHaveAttribute('tabindex', '0');
-    expect(screen.getAllByText(/synthetic dataset/i).length).toBeGreaterThan(0);
+    expect(screen.queryAllByText(/synthetic dataset/i)).toHaveLength(0);
   });
 
   it('removes a product and updates the address', async () => {

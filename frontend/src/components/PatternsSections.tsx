@@ -66,7 +66,7 @@ function AuditBody({ a }: { a: ProductAudit }) {
         </div>
       </details>
       <p className="muted small">
-        Read {a.observations_read.verified} verified and {a.observations_read.snapshot} snapshot observations. {a.source.synthetic && <span className="tag tag--synthetic">Synthetic data</span>}
+        Read {a.observations_read.verified} verified and {a.observations_read.snapshot} snapshot observations.
       </p>
     </div>
   );

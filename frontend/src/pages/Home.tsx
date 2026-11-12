@@ -152,8 +152,7 @@ function FeaturedDemo() {
   return (
     <section aria-labelledby="featured-title">
       <div className="section-head">
-        <h2 id="featured-title">Featured demo products</h2>
-        <span className="tag tag--synthetic">Synthetic data and artwork</span>
+        <h2 id="featured-title">Featured products</h2>
       </div>
       {q.isPending && <p className="muted" role="status">Loading demo products…</p>}
       {q.isError && <p className="inline-error" role="alert">Couldn't load demo products: {q.error.message}</p>}

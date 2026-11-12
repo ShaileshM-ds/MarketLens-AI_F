@@ -32,6 +32,8 @@ def test_app_served_image_paths_are_shown_and_nothing_else_relative():
     # Files the app itself serves (the example dataset's artwork) work offline and under any host policy.
     assert displayable_url("/demo-images/DEMO-P-001.svg", "") == "/demo-images/DEMO-P-001.svg"
     assert displayable_url("/demo-images/fallback.svg", "*") == "/demo-images/fallback.svg"
+    assert displayable_url("/demo-photos/home-appliances-1.jpg", "") == "/demo-photos/home-appliances-1.jpg"
+    assert displayable_url("/demo-photos/../credits.json", "*") is None and displayable_url("/demo-photos/credits.json", "*") is None
     for bad in ("/demo-images/../index.html", "/demo-images/a b.svg", "/api/v1/products", "//evil.com/a.svg",
                 "/demo-images/x.svg?y=1", "/demo-images/x.html", "demo-images/x.svg", "/demo-images/sub/x.svg"):
         assert displayable_url(bad, "*") is None, bad

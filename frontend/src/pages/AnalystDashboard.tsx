@@ -95,7 +95,7 @@ function Body({ d }: { d: Dash }) {
       <section className="card section-card stack-md" aria-labelledby="dash-data">
         <div className="section-head">
           <h2 id="dash-data">Data analysed</h2>
-          <span className="muted small">Up to {formatDateTime(d.cutoff)} · {d.window.days}-day window {d.provenance.synthetic && <span className="tag tag--synthetic">Synthetic data</span>}</span>
+          <span className="muted small">Up to {formatDateTime(d.cutoff)} · {d.window.days}-day window</span>
         </div>
         <dl className="stats">
           <div className="stats__item"><dt>Products</dt><dd>{count(d.totals.products)}</dd></div>

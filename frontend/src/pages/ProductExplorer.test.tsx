@@ -39,7 +39,7 @@ describe('Product Explorer', () => {
     expect(within(card).getByText(/Product rating 3.5–4.2/)).toBeInTheDocument();
     expect(within(card).getByText('MCL0001')).toBeInTheDocument();
     expect(screen.getByText('500 products')).toBeInTheDocument();
-    expect(screen.getAllByText(/Synthetic demonstration data/).length).toBeGreaterThan(0);
+    expect(screen.queryAllByText(/Synthetic demonstration data/)).toHaveLength(0);
     expect(screen.getByText(/single snapshot per listing/i)).toBeInTheDocument();
   });
 

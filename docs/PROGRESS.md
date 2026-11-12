@@ -178,6 +178,18 @@ Details: [PHASE4_PRICE_INTELLIGENCE.md](PHASE4_PRICE_INTELLIGENCE.md).
   - All compare requests returned 200.
 - **Not verified by hand:** screen-reader output, keyboard-only use in a real browser (component tests cover keyboard reachability), the reduced-motion setting.
 
+## Final polish
+- **Photos:** 38 openly licensed photos from Wikimedia Commons (29 added; CC0, public domain, CC BY, CC BY-SA), one distinct photo per Demo product.
+  - The exception: t-shirts and cameras have 4 photos each, so one product in each shares.
+- **Labels:** the repeated "Synthetic" tags and captions are gone; the top-bar data-mode badge stays. A new `/credits` page lists every photo's author and licence.
+- **Tests:** 10 frontend tests updated to assert the labels are absent; 1 backend test added for distinct photos.
+- **Browser:** Explorer shows 23 distinct photos on 24 cards, with no broken images.
+
+## Example dataset v3
+- **File:** `data/share/marketlens-demo-dataset-v3.zip` (2.98 MB, 65 files, rebuilds byte-identically). It replaces v2.
+- **Images:** `image_url` now points to the licensed stock photos (`/demo-photos/…`; phones keep `/demo-images/…svg`). The zip includes the photos with `credits.json` and `IMAGE_CREDITS.md`, and `/demo-photos/` paths are now allowed as app-served images.
+- **Verified:** checksums, manifest and photo credits; no answer key or user data; every `image_url` resolves inside the zip; the 279-row sample imported 279/279 into a throwaway database with photos shown.
+
 ## Demo product photos
 - **What changed:** Demo products now show real, openly licensed stock photos of similar products.
   - 9 photos from Wikimedia Commons (about 1.17 MB), stored locally and credited: CC0, CC BY 2.0/4.0, CC BY-SA 3.0/4.0.
