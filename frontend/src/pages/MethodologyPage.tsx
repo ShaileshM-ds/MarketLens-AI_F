@@ -53,6 +53,7 @@ export function MethodologyPage() {
   return (
     <div className="stack-lg methodology">
       <PageHeader eyebrow="How it works" title="Methodology" note="How MarketLens AI turns stored observations into findings. Every threshold below is read from the running code." />
+      <p className="muted small">Product photos are openly licensed stock images; authors and licences are listed on the <a href="/credits">Image credits</a> page.</p>
       <p className="callout callout--warn" role="note">
         Analytical indicators are not proof of misconduct. Audit flags, synchronization patterns and discount checks are evidence-based signals for review; each lists
         ordinary explanations. MarketLens AI is a decision aid, not a savings guarantee.
@@ -221,7 +222,7 @@ function ForecastEvaluation() {
       {q.data && (
         <>
           <p className="small">
-            {q.data.synthetic && <span className="tag tag--synthetic">Synthetic data</span>} {q.data.products_evaluated} products ({q.data.listings_evaluated} store listings) up to {formatDateTime(q.data.cutoff)};{' '}
+            {q.data.products_evaluated} products ({q.data.listings_evaluated} store listings) up to {formatDateTime(q.data.cutoff)};{' '}
             {q.data.insufficient.length} with insufficient data. Nominal range {q.data.level_percent}%; arrows show previous method → calibrated ({q.data.version}).
           </p>
           <div className="table-wrap" tabIndex={0} role="region" aria-label="Forecast evaluation region">

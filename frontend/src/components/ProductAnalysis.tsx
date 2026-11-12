@@ -56,7 +56,6 @@ export function HistorySection({ d }: { d: ProductDetail }) {
           {q.data && q.data.status === 'available' && <PriceHistoryChart h={q.data} />}
           {q.data && (
             <p className="muted small">
-              {q.data.source.synthetic && <span className="tag tag--synthetic">Synthetic data</span>}{' '}
               {q.data.excluded.timezone_unknown > 0 && `${q.data.excluded.timezone_unknown} snapshot observations without a timezone are excluded. `}
               {q.data.excluded.unknown_shipping_observations > 0 && `${q.data.excluded.unknown_shipping_observations} observations with unknown shipping have no delivered value.`}
             </p>

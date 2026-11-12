@@ -12,31 +12,31 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "Ringflash Tshirt Blank Template (3214240974).jpg"
   },
   "DEMO-P-002": {
-    "author": "THOR",
+    "author": "Juan de Vojníkov",
     "focus": "50% 50%",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ringflash_Tshirt_Blank_Template_(3214240974).jpg",
-    "src": "/demo-photos/mens-clothing-1.jpg",
-    "title": "Ringflash Tshirt Blank Template (3214240974).jpg"
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ironed_black_T-shirt_(001).JPG",
+    "src": "/demo-photos/mens-clothing-2.jpg",
+    "title": "Ironed black T-shirt (001).JPG"
   },
   "DEMO-P-003": {
-    "author": "THOR",
+    "author": "Juan de Vojníkov",
     "focus": "50% 50%",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ringflash_Tshirt_Blank_Template_(3214240974).jpg",
-    "src": "/demo-photos/mens-clothing-1.jpg",
-    "title": "Ringflash Tshirt Blank Template (3214240974).jpg"
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ironed_black_T-shirt_(003).JPG",
+    "src": "/demo-photos/mens-clothing-3.jpg",
+    "title": "Ironed black T-shirt (003).JPG"
   },
   "DEMO-P-004": {
-    "author": "THOR",
-    "focus": "50% 50%",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ringflash_Tshirt_Blank_Template_(3214240974).jpg",
-    "src": "/demo-photos/mens-clothing-1.jpg",
-    "title": "Ringflash Tshirt Blank Template (3214240974).jpg"
+    "author": "EdaBojci",
+    "focus": "50% 22%",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:T-shirt_mocup.jpg",
+    "src": "/demo-photos/mens-clothing-4.jpg",
+    "title": "T-shirt mocup.jpg"
   },
   "DEMO-P-005": {
     "author": "THOR",
@@ -57,40 +57,85 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "Ladies kurta with leggings.jpg"
   },
   "DEMO-P-007": {
-    "author": "Govindliya",
-    "focus": "50% 72%",
+    "author": "AmanAgrahari01",
+    "focus": "50% 50%",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ladies_kurta_with_leggings.jpg",
-    "src": "/demo-photos/womens-clothing-1.jpg",
-    "title": "Ladies kurta with leggings.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Pink_women%27s_kurta_(top).jpg",
+    "src": "/demo-photos/womens-clothing-2.jpg",
+    "title": "Pink women's kurta (top).jpg"
   },
   "DEMO-P-008": {
-    "author": "Govindliya",
-    "focus": "50% 72%",
+    "author": "AmanAgrahari01",
+    "focus": "50% 50%",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ladies_kurta_with_leggings.jpg",
-    "src": "/demo-photos/womens-clothing-1.jpg",
-    "title": "Ladies kurta with leggings.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Black_women%27s_kurta_(top).jpg",
+    "src": "/demo-photos/womens-clothing-3.jpg",
+    "title": "Black women's kurta (top).jpg"
   },
   "DEMO-P-009": {
-    "author": "Govindliya",
-    "focus": "50% 72%",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ladies_kurta_with_leggings.jpg",
-    "src": "/demo-photos/womens-clothing-1.jpg",
-    "title": "Ladies kurta with leggings.jpg"
+    "author": "Unknown (see source page)",
+    "focus": "50% 50%",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Kurta_MET_CI50.16.6_F.jpg",
+    "src": "/demo-photos/womens-clothing-4.jpg",
+    "title": "Kurta MET CI50.16.6 F.jpg"
   },
   "DEMO-P-010": {
-    "author": "Govindliya",
-    "focus": "50% 72%",
+    "author": "Unknown (see source page)",
+    "focus": "50% 50%",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Kurta_MET_CI43.90.44_F.jpg",
+    "src": "/demo-photos/womens-clothing-5.jpg",
+    "title": "Kurta MET CI43.90.44 F.jpg"
+  },
+  "DEMO-P-011": {
+    "author": "JESHOOTS.COM jeshoots",
+    "focus": "50% 50%",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:White_work_table_with_notes,_smartphone_and_laptop_(Unsplash).jpg",
+    "src": "/demo-photos/mobile-phones-1.jpg",
+    "title": "White work table with notes, smartphone and laptop (Unsplash).jpg"
+  },
+  "DEMO-P-012": {
+    "author": "Santeri Viinamäki",
+    "focus": "50% 50%",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Ladies_kurta_with_leggings.jpg",
-    "src": "/demo-photos/womens-clothing-1.jpg",
-    "title": "Ladies kurta with leggings.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Smartphone_with_case_cover_on_table.jpg",
+    "src": "/demo-photos/mobile-phones-2.jpg",
+    "title": "Smartphone with case cover on table.jpg"
+  },
+  "DEMO-P-013": {
+    "author": "Skitterphoto",
+    "focus": "50% 50%",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Smartphone_display_screen.jpg",
+    "src": "/demo-photos/mobile-phones-3.jpg",
+    "title": "Smartphone display screen.jpg"
+  },
+  "DEMO-P-014": {
+    "author": "Cookie Nguyen",
+    "focus": "50% 50%",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_comparison_between_a_smartphone_and_a_tablet-PC.jpg",
+    "src": "/demo-photos/mobile-phones-4.jpg",
+    "title": "A comparison between a smartphone and a tablet-PC.jpg"
+  },
+  "DEMO-P-015": {
+    "author": "Shixart1985",
+    "focus": "50% 50%",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Clock_and_banana_on_a_table_with_a_smartphone_and_a_plant.jpg",
+    "src": "/demo-photos/mobile-phones-5.jpg",
+    "title": "Clock and banana on a table with a smartphone and a plant.jpg"
   },
   "DEMO-P-016": {
     "author": "Unnerving duck",
@@ -102,40 +147,40 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "PineTime smartwatch.jpg"
   },
   "DEMO-P-017": {
-    "author": "Unnerving duck",
+    "author": "Eschenzweig",
     "focus": "50% 50%",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:PineTime_smartwatch.jpg",
-    "src": "/demo-photos/wearables-1.jpg",
-    "title": "PineTime smartwatch.jpg"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Smartwatch-health2.png",
+    "src": "/demo-photos/wearables-2.png",
+    "title": "Smartwatch-health2.png"
   },
   "DEMO-P-018": {
-    "author": "Unnerving duck",
+    "author": "KK IN HK",
     "focus": "50% 50%",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:PineTime_smartwatch.jpg",
-    "src": "/demo-photos/wearables-1.jpg",
-    "title": "PineTime smartwatch.jpg"
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Smart_Watches.png",
+    "src": "/demo-photos/wearables-3.png",
+    "title": "Smart Watches.png"
   },
   "DEMO-P-019": {
-    "author": "Unnerving duck",
+    "author": "energepic.com",
     "focus": "50% 50%",
     "license": "CC0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:PineTime_smartwatch.jpg",
-    "src": "/demo-photos/wearables-1.jpg",
-    "title": "PineTime smartwatch.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Smart_watch.jpg",
+    "src": "/demo-photos/wearables-4.jpg",
+    "title": "Smart watch.jpg"
   },
   "DEMO-P-020": {
-    "author": "Unnerving duck",
+    "author": "Peterhcharlton",
     "focus": "50% 50%",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:PineTime_smartwatch.jpg",
-    "src": "/demo-photos/wearables-1.jpg",
-    "title": "PineTime smartwatch.jpg"
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Max_Health_Band.jpg",
+    "src": "/demo-photos/wearables-5.jpg",
+    "title": "Max Health Band.jpg"
   },
   "DEMO-P-021": {
     "author": "Ashley Pomeroy",
@@ -156,31 +201,31 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "AirFryer Basket.jpg"
   },
   "DEMO-P-023": {
-    "author": "Ashley Pomeroy",
+    "author": "I am R.",
     "focus": "50% 50%",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Air_Fryer_5458.jpg",
-    "src": "/demo-photos/home-appliances-1.jpg",
-    "title": "Air Fryer 5458.jpg"
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Air_Fryer_2020.jpg",
+    "src": "/demo-photos/home-appliances-3.jpg",
+    "title": "Air Fryer 2020.jpg"
   },
   "DEMO-P-024": {
+    "author": "Djsgmnd",
+    "focus": "50% 50%",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Airfryer.jpg",
+    "src": "/demo-photos/home-appliances-4.jpg",
+    "title": "Airfryer.jpg"
+  },
+  "DEMO-P-025": {
     "author": "AirFryerFanatic",
     "focus": "50% 50%",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:AirFryer_Basket.jpg",
-    "src": "/demo-photos/home-appliances-2.jpg",
-    "title": "AirFryer Basket.jpg"
-  },
-  "DEMO-P-025": {
-    "author": "Ashley Pomeroy",
-    "focus": "50% 50%",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Air_Fryer_5458.jpg",
-    "src": "/demo-photos/home-appliances-1.jpg",
-    "title": "Air Fryer 5458.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:AryFryer_BasketTray.jpg",
+    "src": "/demo-photos/home-appliances-5.jpg",
+    "title": "AryFryer BasketTray.jpg"
   },
   "DEMO-P-026": {
     "author": "Pixloom",
@@ -201,31 +246,31 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "Turkish Q computer keyboard.jpg"
   },
   "DEMO-P-028": {
-    "author": "Pixloom",
+    "author": "espensorvik",
     "focus": "50% 50%",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Wireless_Computer_Keyboard.jpg",
-    "src": "/demo-photos/computer-accessories-1.jpg",
-    "title": "Wireless Computer Keyboard.jpg"
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Computer_Keyboard_-_stock_photo.jpg",
+    "src": "/demo-photos/computer-accessories-3.jpg",
+    "title": "Computer Keyboard - stock photo.jpg"
   },
   "DEMO-P-029": {
-    "author": "Răzvan Sandu",
+    "author": "Samiknoov",
     "focus": "50% 50%",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Turkish_Q_computer_keyboard.jpg",
-    "src": "/demo-photos/computer-accessories-2.jpg",
-    "title": "Turkish Q computer keyboard.jpg"
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Black_Computer_keyboard.jpg",
+    "src": "/demo-photos/computer-accessories-4.jpg",
+    "title": "Black Computer keyboard.jpg"
   },
   "DEMO-P-030": {
-    "author": "Pixloom",
+    "author": "SolarMainframe",
     "focus": "50% 50%",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Wireless_Computer_Keyboard.jpg",
-    "src": "/demo-photos/computer-accessories-1.jpg",
-    "title": "Wireless Computer Keyboard.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Mechanical_Keyboard.jpg",
+    "src": "/demo-photos/computer-accessories-5.jpg",
+    "title": "Mechanical Keyboard.jpg"
   },
   "DEMO-P-031": {
     "author": "Syced",
@@ -237,31 +282,31 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "Action camera being accessed via MSDC.jpg"
   },
   "DEMO-P-032": {
-    "author": "Syced",
+    "author": "Thomas Vogt from Paderborn, Deutschland",
     "focus": "50% 50%",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:Action_camera_being_accessed_via_MSDC.jpg",
-    "src": "/demo-photos/cameras-1.jpg",
-    "title": "Action camera being accessed via MSDC.jpg"
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Action_Cam_auf_einem_Helm_(43139864290).jpg",
+    "src": "/demo-photos/cameras-2.jpg",
+    "title": "Action Cam auf einem Helm (43139864290).jpg"
   },
   "DEMO-P-033": {
-    "author": "Syced",
+    "author": "GautamSudhanshu",
     "focus": "50% 50%",
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:Action_camera_being_accessed_via_MSDC.jpg",
-    "src": "/demo-photos/cameras-1.jpg",
-    "title": "Action camera being accessed via MSDC.jpg"
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Handheld_tripod_for_action_cameras_(cropped).jpg",
+    "src": "/demo-photos/cameras-3.jpg",
+    "title": "Handheld tripod for action cameras (cropped).jpg"
   },
   "DEMO-P-034": {
-    "author": "Syced",
+    "author": "Swathi sri srinivasa raghavan",
     "focus": "50% 50%",
     "license": "CC0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "source": "https://commons.wikimedia.org/wiki/File:Action_camera_being_accessed_via_MSDC.jpg",
-    "src": "/demo-photos/cameras-1.jpg",
-    "title": "Action camera being accessed via MSDC.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Mini_camera.jpg",
+    "src": "/demo-photos/cameras-4.jpg",
+    "title": "Mini camera.jpg"
   },
   "DEMO-P-035": {
     "author": "Syced",
@@ -282,39 +327,39 @@ export const DEMO_PHOTOS: Record<string, DemoPhoto> = {
     "title": "Smart plug adapter front view with power button.jpg"
   },
   "DEMO-P-037": {
-    "author": "Sokolikmawwer0",
+    "author": "TBWABusted",
     "focus": "50% 50%",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Smart_plug_adapter_front_view_with_power_button.jpg",
-    "src": "/demo-photos/smart-home-1.jpg",
-    "title": "Smart plug adapter front view with power button.jpg"
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Smart-plug.jpg",
+    "src": "/demo-photos/smart-home-2.jpg",
+    "title": "Smart-plug.jpg"
   },
   "DEMO-P-038": {
-    "author": "Sokolikmawwer0",
+    "author": "Elgato",
     "focus": "50% 50%",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Smart_plug_adapter_front_view_with_power_button.jpg",
-    "src": "/demo-photos/smart-home-1.jpg",
-    "title": "Smart plug adapter front view with power button.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:DE_Smart_Power_Lifestyle_01.jpg",
+    "src": "/demo-photos/smart-home-3.jpg",
+    "title": "DE Smart Power Lifestyle 01.jpg"
   },
   "DEMO-P-039": {
-    "author": "Sokolikmawwer0",
+    "author": "Gareth.randall",
     "focus": "50% 50%",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Smart_plug_adapter_front_view_with_power_button.jpg",
-    "src": "/demo-photos/smart-home-1.jpg",
-    "title": "Smart plug adapter front view with power button.jpg"
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Plug-in_Power_%26_Energy_Monitor_in_UK_Domestic_Mains_Socket.jpeg",
+    "src": "/demo-photos/smart-home-4.jpg",
+    "title": "Plug-in Power & Energy Monitor in UK Domestic Mains Socket.jpeg"
   },
   "DEMO-P-040": {
-    "author": "Sokolikmawwer0",
+    "author": "Grandmaster Huon",
     "focus": "50% 50%",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Smart_plug_adapter_front_view_with_power_button.jpg",
-    "src": "/demo-photos/smart-home-1.jpg",
-    "title": "Smart plug adapter front view with power button.jpg"
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Travel_adapter_in_action.jpeg",
+    "src": "/demo-photos/smart-home-5.jpg",
+    "title": "Travel adapter in action.jpeg"
   }
 };

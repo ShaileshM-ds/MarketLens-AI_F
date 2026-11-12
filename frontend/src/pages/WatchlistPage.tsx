@@ -159,7 +159,7 @@ function WatchedProducts({ onCreateAlert }: { onCreateAlert: (p: AlertProduct) =
                     </p>
                     {p && (
                       <div className="product-card__tags">
-                        {p.quality_labels.map((ql) => (
+                        {p.quality_labels.filter((ql) => ql.code !== 'synthetic_dataset').map((ql) => (
                           <span key={ql.code} className="tag tag--warn" title={ql.description}>
                             {ql.label}
                           </span>
@@ -334,7 +334,6 @@ function NotificationItem({ n }: { n: AppNotification }) {
       <p className="notification__head">
         <strong>{n.title}</strong>
         {!n.read && <span className="tag tag--good">Unread</span>}
-        {n.synthetic && <span className="tag tag--synthetic">Synthetic</span>}
       </p>
       <p>
         <Link to={`/products/${encodeURIComponent(n.product_id)}`} className="link">

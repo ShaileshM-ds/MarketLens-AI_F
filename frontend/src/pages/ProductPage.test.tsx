@@ -90,11 +90,12 @@ describe('Product details', () => {
   it('shows synthetic disclosure and reviews as plain text with separate rating kinds', async () => {
     api();
     renderAt('/products/MCL0001', routes);
-    expect((await screen.findAllByText(/synthetic demonstration data/i)).length).toBeGreaterThan(0);
+    await screen.findByRole('heading', { level: 1 });
+    expect(screen.queryAllByText(/synthetic demonstration data/i)).toHaveLength(0);
     expect(await screen.findByText('<b>Not bold</b> plain text only')).toBeInTheDocument();
     expect(document.querySelector('.review b')).toBeNull();
     expect(screen.getByText('Review rating 3 / 5')).toBeInTheDocument();
-    expect(screen.getByText('Synthetic sample review')).toBeInTheDocument();
+    expect(screen.queryByText('Synthetic sample review')).toBeNull(); // provenance stays in the Data provenance section
     expect(screen.getByText(/average review rating 4.00 \/ 5 from 3 reviews/i)).toBeInTheDocument();
     const amazon = offerCard('Amazon');
     expect(within(amazon).getByText('Seller rating')).toBeInTheDocument();

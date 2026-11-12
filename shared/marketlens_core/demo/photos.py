@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[3]
 CREDITS = ROOT / "frontend" / "public" / "demo-photos" / "credits.json"
 TS = ROOT / "frontend" / "src" / "lib" / "demoPhotos.ts"
 # Where to centre a square crop (CSS object-position): keeps the garment in view and people's heads out of it.
-FOCUS = {"womens-clothing-1.jpg": "50% 72%"}
+FOCUS = {"womens-clothing-1.jpg": "50% 72%", "mens-clothing-4.jpg": "50% 22%"}
 
 
 def demo_photo_map() -> dict:

@@ -70,7 +70,7 @@ const ROWS: { label: string; cell: (p: CompareProduct) => ReactNode }[] = [
     label: 'Data quality',
     cell: (p) => (
       <span className="product-card__tags">
-        {p.quality_labels.map((q) => (
+        {p.quality_labels.filter((q) => q.code !== 'synthetic_dataset').map((q) => (
           <span key={q.code} className="tag tag--warn" title={q.description}>
             {q.label}
           </span>
@@ -185,7 +185,6 @@ export function ComparePage() {
                           {p.name}
                         </Link>
                         <span className="mono muted small">{p.product_id}</span>
-                        {p.synthetic && <span className="tag tag--synthetic">Synthetic</span>}
                         <span className="row-gap compare-col__actions">
                           <button type="button" className="btn btn--secondary btn--small" aria-label={`Replace ${p.name}`} aria-pressed={replacing === p.product_id} onClick={() => setReplacing(replacing === p.product_id ? null : p.product_id)}>
                             {replacing === p.product_id ? 'Choosing…' : 'Replace'}

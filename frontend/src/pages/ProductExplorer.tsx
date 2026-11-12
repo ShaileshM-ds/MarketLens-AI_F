@@ -168,7 +168,6 @@ function Provenance({ meta, mode }: { meta?: FilterMeta; mode: string }) {
   return (
     <div className="provenance" role="note">
       <span className="mode-badge mode-badge--imported">Showing {MODE_LABELS[mode as keyof typeof MODE_LABELS].name} data</span>
-      {meta.data_basis.all_synthetic && <span className="tag tag--synthetic">Synthetic demonstration data</span>}
       {meta.data_basis.snapshot_only && (
         <p className="muted">
           Prices come from a single snapshot per listing without a confirmed timezone. They are not live prices and not a price history.
@@ -607,7 +606,6 @@ function ProductCard({ p }: { p: ProductItem }) {
           <li>{availabilityText(p)}</li>
         </ul>
         <div className="product-card__tags">
-          {p.synthetic && <span className="tag tag--synthetic">Synthetic</span>}
           {p.has_data_warnings && <span className="tag tag--warn">Data warnings</span>}
         </div>
         <div className="card-actions">

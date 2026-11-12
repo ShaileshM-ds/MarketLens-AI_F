@@ -66,7 +66,7 @@ describe('Buying advice', () => {
     expect(within(card).getByText(/13 h old/i)).toBeInTheDocument();
     expect(within(card).getByText(/seller reference price raised/i)).toBeInTheDocument();
     expect(within(card).getByText(/not on predicted future prices/i)).toBeInTheDocument();
-    expect(within(card).getByText(/synthetic data/i)).toBeInTheDocument();
+    expect(within(card).queryByText(/synthetic data/i)).toBeNull();
   });
 
   it('links to the Evidence and Timeline views', async () => {

@@ -55,7 +55,7 @@ describe('Analyst dashboard', () => {
     const call = m.calls.find((u) => u.pathname === '/api/v1/dashboard')!;
     expect(call.searchParams.get('cutoff')).toBe('2026-10-31T23:59:59Z');
     expect(call.searchParams.get('window')).toBe('90');
-    expect(screen.getAllByText(/synthetic/i).length).toBeGreaterThan(0);
+    expect(screen.queryByText('Synthetic data')).toBeNull(); // only the top-bar badge marks the mode
     expect(screen.getByText(/not proof of collusion/i)).toBeInTheDocument();
     expect(screen.getByText(/not legal findings/i)).toBeInTheDocument();
     expect(screen.getByText(/not calibrated/i)).toBeInTheDocument();

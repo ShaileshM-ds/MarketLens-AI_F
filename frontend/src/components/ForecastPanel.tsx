@@ -59,7 +59,6 @@ function ForecastResult({ f, h }: { f: ProductForecast; h: number }) {
               <div className="advice__head">
                 <h3 id="fc-est" className="fc-title">Estimated {h}-day price</h3>
                 <span className="tag tag--warn">Forecast, not observed</span>
-                {f.source.synthetic && <span className="tag tag--synthetic">Synthetic data</span>}
               </div>
               <p className="fc-value">{money(hz.forecast.value_minor)}</p>
               <p className="muted small">

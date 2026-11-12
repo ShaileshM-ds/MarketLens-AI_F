@@ -18,21 +18,20 @@ describe('Demo product artwork', () => {
   it('shows featured Demo products with local synthetic artwork on the Overview', async () => {
     api('demo');
     renderAt('/', routes);
-    const sec = (await screen.findByRole('heading', { name: /featured demo products/i })).closest('section')!;
+    const sec = (await screen.findByRole('heading', { name: /featured products/i })).closest('section')!;
     const imgs = await within(sec).findAllByRole('img');
-    // DEMO-P-001 (a t-shirt) uses a licensed stock photo; DEMO-P-012 (a phone) keeps its artwork: no suitable photo.
-    expect(imgs.map((i) => i.getAttribute('src'))).toEqual(['/demo-photos/mens-clothing-1.jpg', '/demo-images/DEMO-P-012.svg']);
+    // Each Demo product shows its own locally stored, openly licensed photo.
+    expect(imgs.map((i) => i.getAttribute('src'))).toEqual(['/demo-photos/mens-clothing-1.jpg', '/demo-photos/mobile-phones-2.jpg']);
     for (const i of imgs) expect(i.getAttribute('src')!.startsWith('/')).toBe(true); // never an external host
-    expect(imgs[0].getAttribute('alt')).toMatch(/stock photo of a similar product/i);
-    expect(imgs[1].getAttribute('alt')).toMatch(/synthetic demo artwork/i);
-    expect(within(sec).getByText(/synthetic data and artwork/i)).toBeInTheDocument();
+    expect(imgs.map((i) => i.getAttribute('alt'))).toEqual(['Zephyra Cotton Tee', 'Nimbra 5G Phone']);
+    expect(within(sec).queryByText(/synthetic/i)).toBeNull(); // only the top-bar data-mode badge says Demo
   });
 
   it('never shows demo artwork outside Demo mode', async () => {
     const m = api('imported');
     renderAt('/', routes);
     await screen.findByRole('heading', { name: /shop by category/i });
-    expect(screen.queryByRole('heading', { name: /featured demo products/i })).toBeNull();
+    expect(screen.queryByRole('heading', { name: /featured products/i })).toBeNull();
     expect(document.querySelector('img[src^="/demo-images/"]')).toBeNull();
     expect(m.calls.some((u) => u.pathname === '/api/v1/products')).toBe(false);
   });

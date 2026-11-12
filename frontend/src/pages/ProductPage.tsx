@@ -193,7 +193,6 @@ function Overview({ d }: { d: ProductDetail }) {
           <p className="mono muted">Product ID {p.product_id}</p>
         </div>
         <div className="product-card__tags">
-          {d.provenance.synthetic && <span className="tag tag--synthetic">Synthetic demonstration data</span>}
           {d.price_history.timezone_unknown_observation_count > 0 && d.price_history.verified_observation_count === 0 && (
             <span className="tag">Snapshot, timezone not stated</span>
           )}
@@ -612,7 +611,6 @@ function Reviews({ d, productId }: { d: ProductDetail; productId: string }) {
           <p className="muted small">
             {s.formula}
             {s.rated_count < 10 ? ' Small sample: treat this average with caution.' : ''}
-            {d.provenance.synthetic ? ' These are synthetic sample reviews, not real customer opinions.' : ''}
           </p>
         </div>
       )}
@@ -633,7 +631,6 @@ function Reviews({ d, productId }: { d: ProductDetail; productId: string }) {
               <p className="review__head">
                 <strong>{r.review_rating !== null ? `Review rating ${r.review_rating} / 5` : 'No rating given'}</strong>
                 {r.marketplace && <span className="muted"> · {r.marketplace}</span>}
-                {r.synthetic && <span className="tag tag--synthetic">Synthetic sample review</span>}
               </p>
               {/* Plain text only: React escapes it; never rendered as HTML or Markdown. */}
               <p className="review__text">{r.text}</p>
